@@ -1,0 +1,12 @@
+#OliveWeb Framework 1.0
+#.htaccess File
+#Luke Bullard, August 2014
+
+RewriteEngine on
+
+#autodetect rewrite base so no manual
+#modifications are needed
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond $1~%{REQUEST_URI} ([^~]*)~(.*)\1$
+RewriteRule ^(.*)$ %2index.php [QSA,L]
