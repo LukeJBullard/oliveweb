@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <title>OliveWeb</title>
+  <parser>
+    <target>docs</target>
+    <visibility>public,protected</visibility>
+  </parser>
+  <transformer>
+    <target>docs</target>
+  </transformer>
+  <files>
+    <file>index.php</file>
+  </files>
+</phpdoc>
